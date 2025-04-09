@@ -2,14 +2,15 @@
 
 Informações básicas do projeto.
 
-* **Projeto:** [NOME DO PROJETO]
-* **Repositório GitHub:** [LINK PARA O REPOSITÓRIO NO GITHUB]
+* **Projeto:** Oddzilla
+* **Repositório GitHub:** https://github.com/ICEI-PUC-Minas-CC-TI/ti1-2025-1-t2-manha-dificuldade-em-analisas-odds-de-aposta.git
 * **Membros da equipe:**
 
-  * [Fulano](https://github.com/fulano) ⚠️ EXEMPLO ⚠️
-  * [Beltrano](https://github.com/beltrano) ⚠️ EXEMPLO ⚠️
-  * [Cicrano](https://github.com/cicrano) ⚠️ EXEMPLO ⚠️
-
+  * Arthur De Pinho De Almeida https://github.com/imartzz
+  * Bernado Soares https://github.com/bernardosoares22
+  * Cauã Dumont  https://github.com/Cauadumont
+  * Kauã Ferandes https://github.com/Kaua0606
+  * Gabriel Barbosa https://github.com/gabriel180501
 A documentação do projeto é estruturada da seguinte forma:
 
 1. Introdução
@@ -20,98 +21,75 @@ A documentação do projeto é estruturada da seguinte forma:
 6. Solução
 7. Referências Bibliográficas
 
-✅ [Documentação de Design Thinking (MIRO)](files/processo-dt.pdf)
+✅ [[Design Thinking.pdf](https://github.com/user-attachments/files/19658666/Design.Thinking.pdf)
+](files/processo-dt.pdf)
 
 # Contexto
-
 Detalhes sobre o espaço de problema, os objetivos do projeto, sua justificativa e público-alvo.
+
+
+O problema central é a dificuldade em acompanhar as mudanças rápidas das odds de apostas, o que pode levar à perda de oportunidades lucrativas ou a decisões mal informadas.
+ Apostadores precisam de uma forma eficiente e confiável de monitorar essas variações em tempo real, Desenvolver uma plataforma digital (site) que facilite a comparação de odds entre diferentes casas de apostas.
+  Apostar se tornou uma atividade comum e acessível, mas a experiência do usuário ainda é falha. A maioria dos apostadores precisa acessar diversas plataformas manualmente para verificar as odds, o que é demorado, cansativo e pode levar a decisões ruins,criar uma solução que centralize as informações e torne o processo mais intuitivo é uma necessidade real do público e representa uma oportunidade de mercado. Além disso, a proposta valoriza a transparência e a praticidade, dois fatores essenciais em plataformas de apostas modernas.
+  Apostadores iniciantes que se sentem perdidos com tanta variação de odds.
+  Apostadores regulares que buscam sempre as melhores cotações para maximizar os ganhos.
+  Usuários que não têm tempo para comparar odds manualmente.
+  Apostadores Profissionais que querem aumentar a % de lucro escolhendo as melhores odds e maximizando o lucro.
+
+
 
 ## Problema
 
-**✳️✳️✳️ COLOQUE AQUI O SEU TEXTO ✳️✳️✳️**
+Com o crescimento das apostas esportivas online, muitos usuários enfrentam dificuldade para acompanhar as odds, que mudam o tempo todo e variam de uma casa pra outra. Isso acaba confundindo, fazendo o apostador perder tempo ou até tomar decisões ruins.
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Nesse momento você deve apresentar o problema que a sua aplicação deve resolver. No entanto, não é a hora de comentar sobre a aplicação. Descreva também o contexto em que essa aplicação será usada, se houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.
->
-> **Orientações**:
->
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+Percebemos que falta uma forma mais clara e centralizada de visualizar essas cotações. Nosso projeto surge dentro desse contexto, pensando em melhorar a experiência de quem aposta — principalmente os iniciantes — tornando essa comparação mais fácil e acessível.
 
 ## Objetivos
-
-**✳️✳️✳️ COLOQUE AQUI O SEU TEXTO ✳️✳️✳️**
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
->
-> **Orientações**:
->
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+Objetivo Geral
+Desenvolver um software que ajude apostadores a acompanhar e comparar odds de diferentes casas de apostas de forma simples, rápida e eficiente.
+Objetivos Específicos:Criar uma interface clara e intuitiva que permita ao usuário visualizar e filtrar as odds disponíveis em tempo real.
+Integrar dados de odds em tempo real a partir de APIs.
 
 ## Justificativa
 
-**✳️✳️✳️ COLOQUE AQUI O SEU TEXTO ✳️✳️✳️**
+O mercado de apostas esportivas está em constante crescimento, mas muitos usuários — principalmente os iniciantes — enfrentam dificuldades para acompanhar e entender as variações das odds entre diferentes plataformas. Essa situação gera confusão, perda de tempo e pode até levar a decisões erradas durante as apostas por isso pensei em desenvolver um site que resolva pelomenos parcialmente esse problema.
+ O objetivo de integrar APIs e pelo fato de ajudar muito na escabilidade do projeto, sem elas o projeto não vai escalar e não vamos conseguir comparar muitas casas muito menos atualizar em tempo real, a mão seria impossivel fazer o projeto rodar.
+ O objetivo de criar uma interface clean é para facilitar para os apostadores iniciantes que querem algo facil e simples, a aposta em tempo real seria para melhorar a experiencia do usuario mas seria necessario APIs.
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
->
-> O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
->
-> **Orientações**:
->
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+ [Entrevistas Qualitativas e Highlights de pesquisa (1).pdf](https://github.com/user-attachments/files/19658788/Entrevistas.Qualitativas.e.Highlights.de.pesquisa.1.pdf)
+ Aqui as entrevistas que fizemos com apostadores de um grupo do discord.d
+
 
 ## Público-Alvo
 
-**✳️✳️✳️ COLOQUE AQUI O SEU TEXTO ✳️✳️✳️**
+Apostador Iniciante:Conhecimentos prévios: básicos ou quase nenhum sobre odds e estratégias de apostas
+Relação com a tecnologia: usa celular e internet com frequência, mas pode não conhecer ferramentas especializadas
+Necessidade principal: entender o funcionamento das odds e encontrar oportunidades de aposta sem se perder nas informações
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Descreva quais são as pessoas que usarão a sua aplicação indicando os diferentes perfis. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações hierárquicas, etc.
->
-> Adicione informações sobre o público-alvo por meio de uma descrição textual, ou diagramas de personas, mapa de stakeholders, ou como o grupo achar mais conveniente.
->
-> **Orientações**:
->
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+Apostador Estratégico / Profissional:Conhecimentos prévios: avançados, acompanha o mercado com frequência e analisa variações de odds
+Relação com a tecnologia: usa ferramentas de apoio, acompanha dados em tempo real, busca precisão
+Necessidade principal: centralizar informações de diferentes casas de apostas em um só lugar e ter acesso a gráficos, histórico e filtros detalhados
+
+[Personas e Proposta de Valor (Perfil do Cliente) (2).pdf](https://github.com/user-attachments/files/19658841/Personas.e.Proposta.de.Valor.Perfil.do.Cliente.2.pdf)
+
+
+
 
 # Product Discovery
 
 ## Etapa de Entendimento
 
-**✳️✳️✳️ APRESENTE OS ARTEFATOS DA ETAPA  ✳️✳️✳️**
+[Matriz CSD e Mapa de Stakeholders (3) (1).pdf](https://github.com/user-attachments/files/19658853/Matriz.CSD.e.Mapa.de.Stakeholders.3.1.pdf)
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Nessa etapa, vamos trabalhar com a metdologia de Design Thinking para compreender com maior profundidade o problema a ser tratado. Nesse processo, vamos elaborar:
->
-> * **Matriz CSD**: também conhecida por Matriz de Alinhamento, é uma ferramenta utilizada no Design Thinking para organizar informações e facilitar o processo de tomada de decisão e solução de problemas;
-> * **Mapa de stakeholders**: ferramenta que nos permite compreender o grupo de pessoas e entidades que devemos estudar e conversar para entender mais sobre o problema
-> * **Entrevistas qualitativas**: série de entrevistas qualitativas para validar suposições e solucionar as dúvidas com as principais pessoas envolvidas;
-> * **Highlights de pesquisa**: um compilado do levantamento realizado por meio das entrevistas.
+[Entrevistas Qualitativas e Highlights de pesquisa (1).pdf](https://github.com/user-attachments/files/19658856/Entrevistas.Qualitativas.e.Highlights.de.pesquisa.1.pdf)
+
 
 ## Etapa de Definição
 
 ### Personas
 
-**✳️✳️✳️ APRESENTE OS DIAGRAMAS DE PERSONAS ✳️✳️✳️**
+[Personas e Proposta de Valor (Perfil do Cliente) (2).pdf](https://github.com/user-attachments/files/19658865/Personas.e.Proposta.de.Valor.Perfil.do.Cliente.2.pdf)
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Relacione as personas identificadas no seu projeto e os respectivos mapas de empatia. Lembre-se que você deve ser enumerar e descrever precisamente e de forma personalizada todos os principais envolvidos com a solução almeja.
->
-> **Orientações**:
->
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Criar personas (Hotmart)](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
 
 # Product Design
 
@@ -119,33 +97,11 @@ Nesse momento, vamos transformar os insights e validações obtidos em soluçõe
 
 ## Histórias de Usuários
 
-Com base na análise das personas foram identificadas as seguintes histórias de usuários:
-
-| EU COMO...`PERSONA` | QUERO/PRECISO ...`FUNCIONALIDADE`        | PARA ...`MOTIVO/VALOR`               |
-| --------------------- | ------------------------------------------ | -------------------------------------- |
-| Usuário do sistema   | Registrar minhas tarefas ⚠️ EXEMPLO ⚠️ | Não esquecer de fazê-las             |
-| Administrador         | Alterar permissões ⚠️ EXEMPLO ⚠️      | Permitir que possam administrar contas |
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
->
-> **Orientações**:
->
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-
+[Histórias de Usuários Mapa de Valor  Requisitos de Software (2).pdf](https://github.com/user-attachments/files/19658872/Historias.de.Usuarios.Mapa.de.Valor.Requisitos.de.Software.2.pdf)
 ## Proposta de Valor
 
-**✳️✳️✳️ APRESENTE O DIAGRAMA DA PROPOSTA DE VALOR PARA CADA PERSONA ✳️✳️✳️**
+[Histórias de Usuários Mapa de Valor  Requisitos de Software (2).pdf](https://github.com/user-attachments/files/19658887/Historias.de.Usuarios.Mapa.de.Valor.Requisitos.de.Software.2.pdf)
 
-##### Proposta para Persona XPTO ⚠️ EXEMPLO ⚠️
-
-![Exemplo de proposta de valor](images/exemplo-proposta-valor.png)
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> O mapa da proposta de valor é uma ferramenta que nos ajuda a definir qual tipo de produto ou serviço melhor atende às personas definidas anteriormente.
 
 ## Requisitos
 
@@ -153,33 +109,9 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ### Requisitos Funcionais
 
-| ID     | Descrição do Requisito                                   | Prioridade |
-| ------ | ---------------------------------------------------------- | ---------- |
-| RF-001 | Permitir que o usuário cadastre tarefas ⚠️ EXEMPLO ⚠️ | ALTA       |
-| RF-002 | Emitir um relatório de tarefas no mês ⚠️ EXEMPLO ⚠️ | MÉDIA     |
 
-### Requisitos não Funcionais
+[Histórias de Usuários Mapa de Valor  Requisitos de Software (2).pdf](https://github.com/user-attachments/files/19658900/Historias.de.Usuarios.Mapa.de.Valor.Requisitos.de.Software.2.pdf)
 
-| ID      | Descrição do Requisito                                                              | Prioridade |
-| ------- | ------------------------------------------------------------------------------------- | ---------- |
-| RNF-001 | O sistema deve ser responsivo para rodar em um dispositivos móvel ⚠️ EXEMPLO ⚠️ | MÉDIA     |
-| RNF-002 | Deve processar requisições do usuário em no máximo 3s ⚠️ EXEMPLO ⚠️          | BAIXA      |
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Os requisitos de um projeto são classificados em dois grupos:
->
-> - [Requisitos Funcionais (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
->   correspondem a uma funcionalidade que deve estar presente na plataforma (ex: cadastro de usuário).
-> - [Requisitos Não Funcionais (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
->   correspondem a uma característica técnica, seja de usabilidade, desempenho, confiabilidade, segurança ou outro (ex: suporte a dispositivos iOS e Android).
->
-> Lembre-se que cada requisito deve corresponder à uma e somente uma característica alvo da sua solução. Além disso, certifique-se de que todos os aspectos capturados nas Histórias de Usuário foram cobertos.
->
-> **Orientações**:
->
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
 
 ## Projeto de Interface
 
@@ -189,50 +121,32 @@ Artefatos relacionados com a interface e a interacão do usuário na proposta de
 
 Estes são os protótipos de telas do sistema.
 
-**✳️✳️✳️ COLOQUE AQUI OS PROTÓTIPOS DE TELAS COM TÍTULO E DESCRIÇÃO ✳️✳️✳️**
+Home page essa no caso seria a primeira tela que o usuario ira ver já no esporte futebol ![image](https://github.com/user-attachments/assets/28587b7d-3f02-4363-a081-06458b39ea58)
 
-##### TELA XPTO ⚠️ EXEMPLO ⚠️
+Tela de esporte basquete     ![image](https://github.com/user-attachments/assets/50c8bc8b-1657-4c45-afad-b0df738bf7a1)
 
-Descrição para a tela XPTO
+Tela caso o usuario escolha uma liga de basquete o mesmo aconteceria para uma liga de futebol mas claro com os dados recorrentes a tal liga de futebol     ![image](https://github.com/user-attachments/assets/d8114779-8ff2-4411-a98f-489268ad6b15)
 
-![Exemplo de wireframe](images/exemplo-wireframe.png)
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Wireframes são protótipos das telas da aplicação usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante ao layout de elementos fundamentais na interface.
->
-> **Orientações**:
->
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
+
+
+
+
+
+
+
+
 
 ### User Flow
 
-**✳️✳️✳️ COLOQUE AQUI O DIAGRAMA DE FLUXO DE TELAS ✳️✳️✳️**
+![image](https://github.com/user-attachments/assets/3c83ca17-2d3f-42d5-a3fd-00658aef6a21)
+
 
 ![Exemplo de fluxo de telas](images/exemplo-userflow.png)
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
->
-> **Orientações**:
->
-> - [User Flow: O Quê É e Como Fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
-> - [User Flow vs Site Maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
-> - [Top 25 User Flow Tools &amp; Templates for Smooth](https://www.mockplus.com/blog/post/user-flow-tools)
+
 
 ### Protótipo Interativo
-
-**✳️✳️✳️ COLOQUE AQUI UM IFRAME COM SEU PROTÓTIPO INTERATIVO ✳️✳️✳️**
-
-✅ [Protótipo Interativo (MarvelApp)](https://marvelapp.com/prototype/4hd6091?emb=1&iosapp=false&frameless=false)  ⚠️ EXEMPLO ⚠️
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Um protótipo interativo apresenta o projeto de interfaces e permite ao usuário navegar pelas funcionalidades como se estivesse lidando com o software pronto. Utilize as mesmas ferramentas de construção de wireframes para montagem do seu protótipo interativo. Inclua o link para o protótipo interativo do projeto.
 
 # Metodologia
 
@@ -242,37 +156,22 @@ Detalhes sobre a organização do grupo e o ferramental empregado.
 
 Relação de ferramentas empregadas pelo grupo durante o projeto.
 
-| Ambiente                    | Plataforma | Link de acesso                                     |
-| --------------------------- | ---------- | -------------------------------------------------- |
-| Processo de Design Thinking | Miro       | https://miro.com/XXXXXXX ⚠️ EXEMPLO ⚠️        |
-| Repositório de código     | GitHub     | https://github.com/XXXXXXX ⚠️ EXEMPLO ⚠️      |
-| Hospedagem do site          | Render     | https://site.render.com/XXXXXXX ⚠️ EXEMPLO ⚠️ |
-| Protótipo Interativo       | MarvelApp  | https://marvelapp.com/XXXXXXX ⚠️ EXEMPLO ⚠️   |
-|                             |            |                                                    |
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Liste as ferramentas empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível. Inclua itens como: (1) Editor de código, (2) )ferramentas de comunicação, (3) )ferramentas de diagramação, (4) )plataformas de hospedagem, entre outras.
+ Processo de Design Thinking  Miro     |https://miro.com/welcome/TDdTeGpCWW9DK0dZV0NUU3NCMDFVMnk0c1A1L1FPOW4xRkFtc1NFTURLc08rcnNDNWhvR0ZaUmlGTU1jQmxrWnY4S1RQT044YUhkV2VRS2ZtK3JFZVloRXRTRGVNZkxIOHZhaUlOcEUzTDhqdXhKTno4V3V3blNmU0RkcUl4THN3VHhHVHd5UWtSM1BidUtUYmxycDRnPT0hdjE=?share_link_id=173542825303        |
+| Repositório de código     | GitHub     |   https://github.com/ICEI-PUC-Minas-CC-TI/ti1-2025-1-t2-manha-dificuldade-em-analisas-odds-de-aposta.git
+
+Criaçao de wireframes | figma | https://www.figma.com/design/PHqcZASrdJa2x1c2SzOk7x/wireframe-site--Copy-?node-id=2001-4&t=gH7cOuyQfjyGz4uZ-1
+
+para reunião | Discord | 
+
+Para mensagens do dia a dia | WhatsApp |
 
 ## Gerenciamento do Projeto
 
-Divisão de papéis no grupo e apresentação da estrutura da ferramenta de controle de tarefas (Kanban).
+Não utilizamos o Kanban até o momento.
+Marcamos reunião alguns dias da semana para concluirmos as tarefas e nela separamos o trabalho de cada um que depende de cada tarefa nem sempre todo mundo pode comparecer então revezamos bastante.
 
 ![Exemplo de Kanban](images/exemplo-kanban.png)
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Nesta parte do documento, você deve apresentar  o processo de trabalho baseado nas metodologias ágeis, a divisão de papéis e tarefas, as ferramentas empregadas e como foi realizada a gestão de configuração do projeto via GitHub.
->
-> Coloque detalhes sobre o processo de Design Thinking e a implementação do Framework Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
->
-> **Orientações**:
->
-> - [Sobre Projects - GitHub Docs](https://docs.github.com/pt/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
-> - [Gestão de projetos com GitHub | balta.io](https://balta.io/blog/gestao-de-projetos-com-github)
-> - [(460) GitHub Projects - YouTube](https://www.youtube.com/playlist?list=PLiO7XHcmTsldZR93nkTFmmWbCEVF_8F5H)
-> - [11 Passos Essenciais para Implantar Scrum no seu Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
 
 # Solução Implementada
 

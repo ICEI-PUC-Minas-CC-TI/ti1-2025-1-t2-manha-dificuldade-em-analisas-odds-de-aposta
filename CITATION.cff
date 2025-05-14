@@ -1,30 +1,32 @@
 cff-version: 1.0.1
 message: Please cite this software using these metadata.
-title: 
+title: Oddzilla
 authors:
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names:
+  - family-names: de Pinho de Almeida
+    given-names: Arthur
+  - family-names: Soares Campolina Cotta
+    given-names: Bernardo
+  - family-names: Dumont Abreu
+    given-names: Cauã
+  - family-names: de Oliveira Barbosa
+    given-names: Gabriel
+  - family-names: Ferandes Reis
+    given-names: Kauã
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: Nepomuceno Curto
+    given-names: Hayala
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: Mara Freitas Diniz
+    given-names: Luciana
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Dias Maciel
+    given-names: Wesley
 keywords:
-  - 
-  - 
+  - apostas
+  - html, css, javascript
 repository-code: 
 license: CC-BY-4.0
 version: 1.0.0

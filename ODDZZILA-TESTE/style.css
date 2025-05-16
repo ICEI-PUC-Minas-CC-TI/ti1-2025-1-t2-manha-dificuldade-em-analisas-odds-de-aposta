@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  background-color: #070a26;
+  color: #ffffff;
+}
+header {
+  background-color: #141d48;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+header img {
+  height: 50px;
+}
+.estadio {
+  background-color: #34426e;
+  padding: 30px;
+  text-align: center;
+  font-size: 16px;
+}
+.partida {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+}
+.data {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.campeonato {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.odds {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.odds div {
+  background-color: #363f5d;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 16px;
+  width: 100px;
+}
+.votacao {
+  background-color: #171d30;
+  margin: 0 auto 30px;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  text-align: center;
+}
+.votacao h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.votacao label {
+  margin: 0 10px;
+}
+.votacao button {
+  margin-top: 10px;
+  padding: 7px 18px;
+  background-color: #0074cc;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+.votacao button:hover {
+  background-color: #005fa3;
+}

@@ -1,0 +1,83 @@
+{
+  "config": {
+    "ultima_atualizacao": "2025-04-27T08:00:00"
+  },
+  "esportes": [
+    { "id": "futebol", "nome": "Futebol", "colunas": ["casa", "empate", "fora"] },
+    { "id": "basquete", "nome": "Basquete", "colunas": ["casa", "fora"] }
+  ],
+  "competicoes": [
+    { "id": "brasileirao", "nome": "Brasileirão", "esporte": "futebol" },
+    { "id": "libertadores", "nome": "Libertadores", "esporte": "futebol" },
+    { "id": "nba", "nome": "NBA", "esporte": "basquete" },
+    { "id": "nbb", "nome": "NBB", "esporte": "basquete" }
+  ],
+  "jogos": [
+    {
+      "id": 1,
+      "esporte": "futebol",
+      "competicao": "brasileirao",
+      "time_casa": "Flamengo",
+      "time_fora": "Vasco",
+      "horario": "2025-04-28T16:00:00",
+      "local": "Maracanã",
+      "status": "agendado",
+      "odds": {
+        "bet365": {
+          "casa": 1.80,
+          "empate": 3.40,
+          "fora": 4.50,
+          "atualizado": "2025-04-27T10:30:00"
+        },
+        "betano": {
+          "casa": 1.75,
+          "empate": 3.30,
+          "fora": 4.40,
+          "atualizado": "2025-04-27T11:15:00"
+        },
+        "betfair": {
+          "casa": 1.85,
+          "empate": 3.50,
+          "fora": 4.60,
+          "atualizado": "2025-04-27T09:45:00"
+        }
+      },
+      "historico_odds": [
+        {
+          "data": "2025-04-26T09:00:00",
+          "bet365": { "casa": 1.70, "empate": 3.20, "fora": 4.30 },
+          "betano": { "casa": 1.65, "empate": 3.10, "fora": 4.20 }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "esporte": "basquete",
+      "competicao": "nbb",
+      "time_casa": "Flamengo",
+      "time_fora": "São Paulo",
+      "horario": "2025-04-29T19:30:00",
+      "local": "Ginásio do Maracanãzinho",
+      "status": "agendado",
+      "odds": {
+        "bet365": {
+          "casa": 1.65,
+          "fora": 2.20,
+          "atualizado": "2025-04-27T12:00:00"
+        },
+        "betano": {
+          "casa": 1.60,
+          "fora": 2.15,
+          "atualizado": "2025-04-27T13:20:00"
+        }
+      },
+      "historico_odds": [
+        {
+          "data": "2025-04-26T10:00:00",
+          "bet365": { "casa": 1.55, "fora": 2.10 },
+          "betano": { "casa": 1.50, "fora": 2.05 }
+        }
+      ]
+    }
+  ]
+}

@@ -1,16 +1,12 @@
 {
-  "name": "lab-jsonserver",
+  "name": "oddzilla-api",
   "version": "1.0.0",
-  "description": "Laboratório de aplicação Web com backend baseado no JSON Server",
+  "description": "API fake para ODDZILLA usando json-server",
   "main": "index.js",
   "scripts": {
-   "start": "node index.js"
+    "start": "json-server --watch db.json --port 3000"
   },
-  "keywords": [],
-  "author": "Rommel Vieira Carneiro",
-  "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
     "json-server": "^0.17.3"
   }
 }

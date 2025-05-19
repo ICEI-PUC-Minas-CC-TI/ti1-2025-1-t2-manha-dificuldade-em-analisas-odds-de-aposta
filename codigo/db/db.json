@@ -1,25 +1,189 @@
 {
-  "usuarios": [
+  "config": {
+    "ultima_atualizacao": "2025-04-27T08:00:00"
+  },
+  "esportes": [
     {
-      "id": 1,
-      "login": "admin",
-      "senha": "123",
-      "nome": "Administrador do Sistema",
-      "email": "admin@abc.com"
+      "id": "futebol",
+      "nome": "Futebol",
+      "colunas": [
+        "casa",
+        "empate",
+        "fora"
+      ]
     },
     {
-      "id": 2,
-      "login": "user",
-      "senha": "123",
-      "nome": "Usuario Comum",
-      "email": "user@abc.com"
+      "id": "basquete",
+      "nome": "Basquete",
+      "colunas": [
+        "casa",
+        "fora"
+      ]
+    }
+  ],
+  "competicoes": [
+    {
+      "id": "brasileirao",
+      "nome": "Brasileirão",
+      "esporte": "futebol"
     },
     {
-      "login": "rommel",
-      "senha": "123",
-      "nome": "Rommel",
-      "email": "rommel@gmail.com",
-      "id": 3
+      "id": "libertadores",
+      "nome": "Libertadores",
+      "esporte": "futebol"
+    },
+    {
+      "id": "nba",
+      "nome": "NBA",
+      "esporte": "basquete"
+    },
+    {
+      "id": "nbb",
+      "nome": "NBB",
+      "esporte": "basquete"
+    }
+  ],
+  "jogos": [
+    {
+      "id": "1",
+      "esporte": "futebol",
+      "competicao": "brasileirao",
+      "time_casa": "Flamengo",
+      "time_fora": "Vasco",
+      "horario": "2025-04-28T16:00:00",
+      "local": "Maracanã",
+      "status": "agendado",
+      "odds": {
+        "bet365": {
+          "casa": 1.7,
+          "empate": 3.4,
+          "fora": 4.5,
+          "atualizado": "2025-05-13T20:39:26.548Z"
+        },
+        "betano": {
+          "casa": 1.75,
+          "empate": 3.3,
+          "fora": 4.4,
+          "atualizado": "2025-05-13T20:39:26.548Z"
+        },
+        "betfair": {
+          "casa": 1.85,
+          "empate": 3.5,
+          "fora": 4.6,
+          "atualizado": "2025-05-13T20:39:26.548Z"
+        }
+      },
+      "historico_odds": [
+        {
+          "data": "2025-04-26T09:00:00",
+          "bet365": {
+            "casa": 1.7,
+            "empate": 3.2,
+            "fora": 4.3
+          },
+          "betano": {
+            "casa": 1.65,
+            "empate": 3.1,
+            "fora": 4.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "esporte": "basquete",
+      "competicao": "nbb",
+      "time_casa": "Flamengo",
+      "time_fora": "São Paulo",
+      "horario": "2025-04-29T19:30:00",
+      "local": "Ginásio do Maracanãzinho",
+      "status": "agendado",
+      "odds": {
+        "bet365": {
+          "casa": 1.75,
+          "fora": 2.2,
+          "atualizado": "2025-05-13T20:39:24.399Z",
+          "empate": 3.2
+        },
+        "betano": {
+          "casa": 1.6,
+          "fora": 2.15,
+          "atualizado": "2025-05-13T20:39:24.400Z",
+          "empate": 3.2
+        },
+        "betfair": {
+          "casa": 1.8,
+          "empate": 3,
+          "fora": 4.3,
+          "atualizado": "2025-05-13T20:39:24.400Z"
+        }
+      },
+      "historico_odds": [
+        {
+          "data": "2025-04-26T10:00:00",
+          "bet365": {
+            "casa": 1.55,
+            "fora": 2.1
+          },
+          "betano": {
+            "casa": 1.5,
+            "fora": 2.05
+          }
+        }
+      ]
+    },
+    {
+      "id": "21a6",
+      "time_casa": "Cruzeiro",
+      "time_fora": "Atletico",
+      "horario": "2025-05-19T20:30",
+      "competicao": "brasileirao",
+      "esporte": "futebol",
+      "odds": {
+        "bet365": {
+          "casa": 1,
+          "fora": 1,
+          "empate": 1,
+          "atualizado": "2025-05-19T02:02:27.020Z"
+        },
+        "betano": {
+          "casa": 1,
+          "fora": 1,
+          "empate": 1,
+          "atualizado": "2025-05-19T02:02:27.020Z"
+        },
+        "betfair": {
+          "casa": 1,
+          "fora": 1,
+          "empate": 1,
+          "atualizado": "2025-05-19T02:02:27.020Z"
+        }
+      }
+    },
+    {
+      "id": "e33f",
+      "time_casa": "Lakers",
+      "time_fora": "Celtics",
+      "horario": "2025-05-20T20:30",
+      "competicao": "nba",
+      "esporte": "basquete",
+      "odds": {
+        "bet365": {
+          "casa": 2,
+          "fora": 1.74,
+          "atualizado": "2025-05-19T19:08:13.897Z"
+        },
+        "betano": {
+          "casa": 3,
+          "fora": 1.5,
+          "atualizado": "2025-05-19T19:08:13.897Z"
+        },
+        "betfair": {
+          "casa": 4,
+          "fora": 5,
+          "atualizado": "2025-05-19T19:08:13.897Z"
+        }
+      }
     }
   ]
 }

@@ -3,14 +3,67 @@
     "ultima_atualizacao": "2025-04-27T08:00:00"
   },
   "esportes": [
-    { "id": "futebol", "nome": "Futebol", "colunas": ["casa", "empate", "fora"] },
-    { "id": "basquete", "nome": "Basquete", "colunas": ["casa", "fora"] }
+    {
+      "id": "futebol",
+      "nome": "Futebol",
+      "colunas": [
+        "casa",
+        "empate",
+        "fora"
+      ]
+    },
+    {
+      "id": "basquete",
+      "nome": "Basquete",
+      "colunas": [
+        "casa",
+        "fora"
+      ]
+    }
   ],
   "competicoes": [
-    { "id": "brasileirao", "nome": "Brasileirão", "esporte": "futebol" },
-    { "id": "libertadores", "nome": "Libertadores", "esporte": "futebol" },
-    { "id": "nba", "nome": "NBA", "esporte": "basquete" },
-    { "id": "nbb", "nome": "NBB", "esporte": "basquete" }
+    {
+      "id": "brasileirao",
+      "nome": "Brasileirão",
+      "esporte": "futebol"
+    },
+    {
+      "id": "libertadores",
+      "nome": "Libertadores",
+      "esporte": "futebol"
+    },
+    {
+      "id": "nba",
+      "nome": "NBA",
+      "esporte": "basquete"
+    },
+    {
+      "id": "nbb",
+      "nome": "NBB",
+      "esporte": "basquete"
+    }
+  ],
+  "comentarios": [
+    {
+      "id": 1,
+      "jogoId": 1,
+      "texto": "Vai dar Corinthians!"
+    },
+    {
+      "id": 2,
+      "jogoId": 1,
+      "texto": "Jogo difícil, acho que vai empatar."
+    },
+    {
+      "jogoId": "jogo",
+      "texto": "gabs",
+      "id": 3
+    },
+    {
+      "jogoId": "jogo",
+      "texto": "djksajdksajd",
+      "id": 4
+    }
   ],
   "jogos": [
     {
@@ -24,29 +77,37 @@
       "status": "agendado",
       "odds": {
         "bet365": {
-          "casa": 1.80,
-          "empate": 3.40,
-          "fora": 4.50,
+          "casa": 1.8,
+          "empate": 3.4,
+          "fora": 4.5,
           "atualizado": "2025-04-27T10:30:00"
         },
         "betano": {
           "casa": 1.75,
-          "empate": 3.30,
-          "fora": 4.40,
+          "empate": 3.3,
+          "fora": 4.4,
           "atualizado": "2025-04-27T11:15:00"
         },
         "betfair": {
           "casa": 1.85,
-          "empate": 3.50,
-          "fora": 4.60,
+          "empate": 3.5,
+          "fora": 4.6,
           "atualizado": "2025-04-27T09:45:00"
         }
       },
       "historico_odds": [
         {
           "data": "2025-04-26T09:00:00",
-          "bet365": { "casa": 1.70, "empate": 3.20, "fora": 4.30 },
-          "betano": { "casa": 1.65, "empate": 3.10, "fora": 4.20 }
+          "bet365": {
+            "casa": 1.7,
+            "empate": 3.2,
+            "fora": 4.3
+          },
+          "betano": {
+            "casa": 1.65,
+            "empate": 3.1,
+            "fora": 4.2
+          }
         }
       ]
     },
@@ -62,11 +123,11 @@
       "odds": {
         "bet365": {
           "casa": 1.65,
-          "fora": 2.20,
+          "fora": 2.2,
           "atualizado": "2025-04-27T12:00:00"
         },
         "betano": {
-          "casa": 1.60,
+          "casa": 1.6,
           "fora": 2.15,
           "atualizado": "2025-04-27T13:20:00"
         }
@@ -74,8 +135,14 @@
       "historico_odds": [
         {
           "data": "2025-04-26T10:00:00",
-          "bet365": { "casa": 1.55, "fora": 2.10 },
-          "betano": { "casa": 1.50, "fora": 2.05 }
+          "bet365": {
+            "casa": 1.55,
+            "fora": 2.1
+          },
+          "betano": {
+            "casa": 1.5,
+            "fora": 2.05
+          }
         }
       ]
     }

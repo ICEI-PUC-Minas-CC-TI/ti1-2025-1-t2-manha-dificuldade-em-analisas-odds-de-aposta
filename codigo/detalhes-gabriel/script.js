@@ -68,7 +68,47 @@ async function carregarJogo() {
       resultadoDiv.setAttribute('resultado-parcial', true);
       votacaoDiv.appendChild(resultadoDiv);
     });
+//comentarios
+const comentariosContainer = document.createElement('div');//conteiner pros comentarios
+comentariosContainer.className = 'comentarios';
+comentariosContainer.innerHTML = `
+  <h2>Comentários</h2>
+  <form id="formComentario">
+    <textarea id="comentarioTexto" placeholder="Escreva um comentario" required></textarea>
+    <br>
+    <button type="submit">Enviar</button>
+  </form>
+  <div id="listaComentarios"></div>
+`;
+document.getElementById('jogo').appendChild(comentariosContainer);//pra pegar os comentarios
+
+async function carregarComentarios() {//pra buscar os comentarios no json(read)
+  const res = await fetch(`${API_URL}/comentarios?jogoId=${jogo.id}`);
+  const comentarios = await res.json();
+
+  const lista = document.getElementById('listaComentarios');
+  lista.innerHTML = comentarios.map(c => `<p><strong>Usuário:</strong> ${c.texto}</p>`).join('');
+}
+carregarComentarios();
+
+
+document.getElementById('formComentario').addEventListener('submit', async (e) => {//
+  e.preventDefault();
+  const texto = document.getElementById('comentarioTexto').value.trim();
+  if (!texto) return;
+
+  await fetch(`${API_URL}/comentarios`, {//faz o create dos comentarios usando POST
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ jogoId: jogo.id, texto })
+  });
+
+  document.getElementById('comentarioTexto').value = '';
+  carregarComentarios();
+});
+
 
 }
+
 
 carregarJogo();

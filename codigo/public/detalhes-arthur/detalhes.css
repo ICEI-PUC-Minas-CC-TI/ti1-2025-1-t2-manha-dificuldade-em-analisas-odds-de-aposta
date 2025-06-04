@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  background-color: #070a26;
+  color: #ffffff;
+}
+header {
+  background-color: #141d48;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+header img {
+  height: 50px;
+}
+.partida {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+.data {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.campeonato {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.odds {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+.odds div {
+  background-color: #363f5d;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 16px;
+  width: 120px;
+}
+.historico {
+  background-color: #e5e5e5;
+  color: #000;
+  padding: 20px;
+  margin: 30px auto;
+  width: 90%;
+  border-radius: 8px;
+}
+.historico h2 {
+  text-align: center;
+  color: #0e2b53;
+}
+.historico p {
+  margin: 8px 0;
+}

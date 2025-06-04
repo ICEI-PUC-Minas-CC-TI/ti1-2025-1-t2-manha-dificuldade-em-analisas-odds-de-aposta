@@ -132,13 +132,37 @@ async function updateOdds(id) {
     odds[book][type] = parseFloat(input.value) || 0;
   });
 
+  // Atualiza odds do jogo
   await fetch(`${API_URL}/jogos/${id}`, {
     method: 'PATCH',
-    headers: {'Content-Type':'application/json'},
+    headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ odds })
   });
+
+  // Registra no histórico
+  await registrarHistorico(id, odds);
+
   alert('Odds atualizadas!');
   loadData();
+}
+
+async function registrarHistorico(jogoId, odds) {
+  const timestamp = new Date().toISOString();
+
+  for (const casa in odds) {
+    await fetch(`${API_URL}/historico_odds`, {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({
+        jogoId: jogoId,
+        casa: casa,
+        casa_valor: odds[casa].casa,
+        empate_valor: odds[casa].empate,
+        fora_valor: odds[casa].fora,
+        data: timestamp
+      })
+    });
+  }
 }
 
 // Excluir jogo

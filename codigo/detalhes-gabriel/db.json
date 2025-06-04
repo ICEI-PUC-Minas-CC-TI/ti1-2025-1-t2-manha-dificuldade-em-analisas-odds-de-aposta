@@ -55,14 +55,9 @@
       "texto": "Jogo difícil, acho que vai empatar."
     },
     {
-      "jogoId": "jogo",
-      "texto": "gabs",
+      "jogoId": 1,
+      "texto": "Acho que o Arrascaeta vai dar mais de 1 chute no gol",
       "id": 3
-    },
-    {
-      "jogoId": "jogo",
-      "texto": "djksajdksajd",
-      "id": 4
     }
   ],
   "jogos": [
@@ -145,6 +140,38 @@
           }
         }
       ]
+    }
+  ],
+  "votos": [
+    {
+      "jogoId": 1,
+      "resultado": "Flamengo",
+      "id": 1
+    },
+    {
+      "jogoId": 1,
+      "resultado": "Empate",
+      "id": 2
+    },
+    {
+      "jogoId": 1,
+      "resultado": "Vasco",
+      "id": 3
+    },
+    {
+      "jogoId": 1,
+      "resultado": "Flamengo",
+      "id": 4
+    },
+    {
+      "jogoId": 1,
+      "resultado": "Flamengo",
+      "id": 5
+    },
+    {
+      "jogoId": 1,
+      "resultado": "Flamengo",
+      "id": 6
     }
   ]
 }

@@ -36,12 +36,9 @@ async function carregarJogo() {
         <button>Votar</button>
       </div>
     `;
-  } catch (error) {
-    document.getElementById('jogo').innerHTML = '<p>Erro ao carregar dados do jogo.</p>';//mostra o erro se nao conseguir carregar
-    console.error(error);
-  }
+
     const botaoVotar = document.querySelector('.votacao button');
-    botaoVotar.addEventListener('click', () => {//pra fazer o botão de votar funcional
+    botaoVotar.addEventListener('click', async () => {//pra fazer o botão de votar funcional
       const opcoes = document.querySelectorAll('input[name="voto"]');
       let selecionado = null;
 
@@ -55,10 +52,43 @@ async function carregarJogo() {
       resultadoDiv.style.marginTop = '10px';
       resultadoDiv.style.fontWeight = 'bold';
 
-      if (selecionado) {//Display temporário na tela, depois computar os votos e salvar no json
-        resultadoDiv.innerText = `Resultado parcial: ${selecionado} - 100% dos votos`;
-      } else {
+      if (!selecionado) {
         resultadoDiv.innerText = 'Por favor, selecione uma opção antes de votar.';
+      } else {
+        try {
+          
+          await fetch(`${API_URL}/votos`, {//faz o create do voto no servidor
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              jogoId: jogo.id,
+              resultado: selecionado
+            })
+          });
+
+          
+          const resVotos = await fetch(`${API_URL}/votos?jogoId=${jogo.id}`);//busca todos os votos do jogo
+          const votos = await resVotos.json();
+
+          
+          const contagem = {};
+          votos.forEach(v => {//conta os votos por opção
+            contagem[v.resultado] = (contagem[v.resultado] || 0) + 1;
+          });
+
+          const total = votos.length;
+          const opcoesExibidas = [jogo.time_casa, 'Empate', jogo.time_fora];
+          const linhas = opcoesExibidas.map(opcao => {
+            const qtd = contagem[opcao] || 0;
+            const perc = ((qtd / total) * 100).toFixed(1);//calcula a porcentagem de cada opcao
+            return `${opcao}: ${qtd} voto(s) - ${perc}%`;
+          }).join('<br>');
+
+          resultadoDiv.innerHTML = `Resultado parcial:<br>${linhas}`;
+        } catch (err) {
+          console.error(err);
+          resultadoDiv.innerText = 'Erro ao registrar ou carregar os votos.';
+        }
       }
 
       const votacaoDiv = document.querySelector('.votacao');
@@ -68,47 +98,49 @@ async function carregarJogo() {
       resultadoDiv.setAttribute('resultado-parcial', true);
       votacaoDiv.appendChild(resultadoDiv);
     });
-//comentarios
-const comentariosContainer = document.createElement('div');//conteiner pros comentarios
-comentariosContainer.className = 'comentarios';
-comentariosContainer.innerHTML = `
-  <h2>Comentários</h2>
-  <form id="formComentario">
-    <textarea id="comentarioTexto" placeholder="Escreva um comentario" required></textarea>
-    <br>
-    <button type="submit">Enviar</button>
-  </form>
-  <div id="listaComentarios"></div>
-`;
-document.getElementById('jogo').appendChild(comentariosContainer);//pra pegar os comentarios
 
-async function carregarComentarios() {//pra buscar os comentarios no json(read)
-  const res = await fetch(`${API_URL}/comentarios?jogoId=${jogo.id}`);
-  const comentarios = await res.json();
+    //comentarios
+    const comentariosContainer = document.createElement('div');//conteiner pros comentarios
+    comentariosContainer.className = 'comentarios';
+    comentariosContainer.innerHTML = `
+      <h2>Comentários</h2>
+      <form id="formComentario">
+        <textarea id="comentarioTexto" placeholder="Escreva um comentario" required></textarea>
+        <br>
+        <button type="submit">Enviar</button>
+      </form>
+      <div id="listaComentarios"></div>
+    `;
+    document.getElementById('jogo').appendChild(comentariosContainer);//pra pegar os comentarios
 
-  const lista = document.getElementById('listaComentarios');
-  lista.innerHTML = comentarios.map(c => `<p><strong>Usuário:</strong> ${c.texto}</p>`).join('');
+    async function carregarComentarios() {//pra buscar os comentarios no json(read)
+      const res = await fetch(`${API_URL}/comentarios?jogoId=${jogo.id}`);
+      const comentarios = await res.json();
+
+      const lista = document.getElementById('listaComentarios');
+      lista.innerHTML = comentarios.map(c => `<p><strong>Usuário:</strong> ${c.texto}</p>`).join('');
+    }
+    carregarComentarios();
+
+    document.getElementById('formComentario').addEventListener('submit', async (e) => {//
+      e.preventDefault();
+      const texto = document.getElementById('comentarioTexto').value.trim();
+      if (!texto) return;
+
+      await fetch(`${API_URL}/comentarios`, {//faz o create dos comentarios usando POST
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ jogoId: jogo.id, texto })
+      });
+
+      document.getElementById('comentarioTexto').value = '';
+      carregarComentarios();
+    });
+
+  } catch (error) {
+    document.getElementById('jogo').innerHTML = '<p>Erro ao carregar dados do jogo.</p>';//mostra o erro se nao conseguir carregar
+    console.error(error);
+  }
 }
-carregarComentarios();
-
-
-document.getElementById('formComentario').addEventListener('submit', async (e) => {//
-  e.preventDefault();
-  const texto = document.getElementById('comentarioTexto').value.trim();
-  if (!texto) return;
-
-  await fetch(`${API_URL}/comentarios`, {//faz o create dos comentarios usando POST
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ jogoId: jogo.id, texto })
-  });
-
-  document.getElementById('comentarioTexto').value = '';
-  carregarComentarios();
-});
-
-
-}
-
 
 carregarJogo();

@@ -53,19 +53,19 @@
       "esporte": "futebol",
       "odds": {
         "bet365": {
-          "casa": 2,
-          "empate": 2,
-          "fora": 2
+          "casa": 1.52,
+          "empate": 3.75,
+          "fora": 5
         },
         "betano": {
-          "casa": 5,
+          "casa": 1.6,
           "empate": 4,
-          "fora": 3
+          "fora": 4.75
         },
         "betfair": {
-          "casa": 2,
-          "empate": 3,
-          "fora": 2
+          "casa": 1.7,
+          "empate": 3.36,
+          "fora": 4
         }
       }
     },
@@ -78,19 +78,19 @@
       "esporte": "futebol",
       "odds": {
         "bet365": {
-          "casa": 5,
-          "empate": 5,
-          "fora": 5
+          "casa": 3,
+          "empate": 4,
+          "fora": 2
         },
         "betano": {
-          "casa": 2,
-          "empate": 4,
-          "fora": 3
+          "casa": 3,
+          "empate": 3,
+          "fora": 4
         },
         "betfair": {
-          "casa": 3,
-          "empate": 2,
-          "fora": 3
+          "casa": 2,
+          "empate": 1.5,
+          "fora": 2
         }
       }
     },
@@ -103,19 +103,16 @@
       "esporte": "basquete",
       "odds": {
         "bet365": {
-          "casa": 2,
-          "fora": 3,
-          "atualizado": "2025-05-22T23:01:49.779Z"
+          "casa": 3,
+          "fora": 2
         },
         "betano": {
-          "casa": 4,
-          "fora": 5,
-          "atualizado": "2025-05-22T23:01:49.779Z"
+          "casa": 3,
+          "fora": 3
         },
         "betfair": {
           "casa": 2,
-          "fora": 3,
-          "atualizado": "2025-05-22T23:01:49.779Z"
+          "fora": 2
         }
       }
     },
@@ -128,19 +125,16 @@
       "esporte": "basquete",
       "odds": {
         "bet365": {
-          "casa": 2,
-          "fora": 3,
-          "atualizado": "2025-05-22T23:02:46.555Z"
+          "casa": 3,
+          "fora": 2
         },
         "betano": {
-          "casa": 4,
-          "fora": 3,
-          "atualizado": "2025-05-22T23:02:46.555Z"
+          "casa": 3,
+          "fora": 2
         },
         "betfair": {
-          "casa": 3,
-          "fora": 2,
-          "atualizado": "2025-05-22T23:02:46.555Z"
+          "casa": 4,
+          "fora": 3
         }
       }
     }
@@ -193,7 +187,7 @@
   ],
   "historico_odds": [
     {
-      "id": 1,
+      "id": "1",
       "jogoId": "1c45",
       "casa": "bet365",
       "casa_valor": 3,
@@ -227,6 +221,162 @@
       "empate_valor": 2,
       "fora_valor": 3,
       "data": "2025-06-04T13:41:25.126Z"
+    },
+    {
+      "id": "13e9",
+      "jogoId": "8793",
+      "casa": "bet365",
+      "casa_valor": 3.1,
+      "empate_valor": 3.1,
+      "fora_valor": 3,
+      "data": "2025-06-10T22:46:11.983Z"
+    },
+    {
+      "id": "b293",
+      "jogoId": "8793",
+      "casa": "betano",
+      "casa_valor": 3,
+      "empate_valor": 4.3,
+      "fora_valor": 3.25,
+      "data": "2025-06-10T22:46:11.983Z"
+    },
+    {
+      "id": "59f5",
+      "jogoId": "8793",
+      "casa": "betfair",
+      "casa_valor": 2,
+      "empate_valor": 4,
+      "fora_valor": 4,
+      "data": "2025-06-10T22:46:11.983Z"
+    },
+    {
+      "id": "ac5d",
+      "jogoId": "8793",
+      "casa": "bet365",
+      "casa_valor": 3,
+      "empate_valor": 3,
+      "fora_valor": 3,
+      "data": "2025-06-10T22:46:40.241Z"
+    },
+    {
+      "id": "3340",
+      "jogoId": "8793",
+      "casa": "betano",
+      "casa_valor": 3,
+      "empate_valor": 5,
+      "fora_valor": 3,
+      "data": "2025-06-10T22:46:40.241Z"
+    },
+    {
+      "id": "d100",
+      "jogoId": "8793",
+      "casa": "betfair",
+      "casa_valor": 3,
+      "empate_valor": 2,
+      "fora_valor": 2,
+      "data": "2025-06-10T22:46:40.241Z"
+    },
+    {
+      "id": "781b",
+      "jogoId": "8793",
+      "casa": "bet365",
+      "casa_valor": 1.52,
+      "empate_valor": 3.75,
+      "fora_valor": 5,
+      "data": "2025-06-10T23:00:40.738Z"
+    },
+    {
+      "id": "2e49",
+      "jogoId": "8793",
+      "casa": "betano",
+      "casa_valor": 1.6,
+      "empate_valor": 4,
+      "fora_valor": 4.75,
+      "data": "2025-06-10T23:00:40.738Z"
+    },
+    {
+      "id": "10bc",
+      "jogoId": "8793",
+      "casa": "betfair",
+      "casa_valor": 1.7,
+      "empate_valor": 3.36,
+      "fora_valor": 4,
+      "data": "2025-06-10T23:00:40.738Z"
+    },
+    {
+      "id": "ac5b",
+      "jogoId": "1c45",
+      "casa": "bet365",
+      "casa_valor": 3,
+      "empate_valor": 4,
+      "fora_valor": 2,
+      "data": "2025-06-10T23:14:27.761Z"
+    },
+    {
+      "id": "4c49",
+      "jogoId": "1c45",
+      "casa": "betano",
+      "casa_valor": 3,
+      "empate_valor": 3,
+      "fora_valor": 4,
+      "data": "2025-06-10T23:14:27.761Z"
+    },
+    {
+      "id": "4bcc",
+      "jogoId": "1c45",
+      "casa": "betfair",
+      "casa_valor": 2,
+      "empate_valor": 1.5,
+      "fora_valor": 2,
+      "data": "2025-06-10T23:14:27.761Z"
+    },
+    {
+      "id": "165b",
+      "jogoId": "0faf",
+      "casa": "bet365",
+      "casa_valor": 3,
+      "fora_valor": 2,
+      "data": "2025-06-10T23:15:01.709Z"
+    },
+    {
+      "id": "19b9",
+      "jogoId": "0faf",
+      "casa": "betano",
+      "casa_valor": 3,
+      "fora_valor": 2,
+      "data": "2025-06-10T23:15:01.709Z"
+    },
+    {
+      "id": "6485",
+      "jogoId": "0faf",
+      "casa": "betfair",
+      "casa_valor": 4,
+      "fora_valor": 3,
+      "data": "2025-06-10T23:15:01.709Z"
+    },
+    {
+      "id": "7672",
+      "jogoId": "d92c",
+      "casa": "bet365",
+      "casa_valor": 3,
+      "fora_valor": 2,
+      "data": "2025-06-10T23:15:04.474Z"
+    },
+    {
+      "id": "9083",
+      "jogoId": "d92c",
+      "casa": "betano",
+      "casa_valor": 3,
+      "fora_valor": 3,
+      "data": "2025-06-10T23:15:04.474Z"
+    },
+    {
+      "id": "6884",
+      "jogoId": "d92c",
+      "casa": "betfair",
+      "casa_valor": 2,
+      "fora_valor": 2,
+      "data": "2025-06-10T23:15:04.474Z"
     }
   ]
 }

@@ -45,145 +45,188 @@
   ],
   "jogos": [
     {
-      "id": "1",
-      "esporte": "futebol",
-      "competicao": "brasileirao",
-      "time_casa": "Flamengo",
-      "time_fora": "Vasco",
-      "horario": "2025-04-28T16:00:00",
-      "local": "Maracanã",
-      "status": "agendado",
-      "odds": {
-        "bet365": {
-          "casa": 1.7,
-          "empate": 3.4,
-          "fora": 4.5,
-          "atualizado": "2025-05-13T20:39:26.548Z"
-        },
-        "betano": {
-          "casa": 1.75,
-          "empate": 3.3,
-          "fora": 4.4,
-          "atualizado": "2025-05-13T20:39:26.548Z"
-        },
-        "betfair": {
-          "casa": 1.85,
-          "empate": 3.5,
-          "fora": 4.6,
-          "atualizado": "2025-05-13T20:39:26.548Z"
-        }
-      },
-      "historico_odds": [
-        {
-          "data": "2025-04-26T09:00:00",
-          "bet365": {
-            "casa": 1.7,
-            "empate": 3.2,
-            "fora": 4.3
-          },
-          "betano": {
-            "casa": 1.65,
-            "empate": 3.1,
-            "fora": 4.2
-          }
-        }
-      ]
-    },
-    {
-      "id": "2",
-      "esporte": "basquete",
-      "competicao": "nbb",
-      "time_casa": "Flamengo",
-      "time_fora": "São Paulo",
-      "horario": "2025-04-29T19:30:00",
-      "local": "Ginásio do Maracanãzinho",
-      "status": "agendado",
-      "odds": {
-        "bet365": {
-          "casa": 1.75,
-          "fora": 2.2,
-          "atualizado": "2025-05-13T20:39:24.399Z",
-          "empate": 3.2
-        },
-        "betano": {
-          "casa": 1.6,
-          "fora": 2.15,
-          "atualizado": "2025-05-13T20:39:24.400Z",
-          "empate": 3.2
-        },
-        "betfair": {
-          "casa": 1.8,
-          "empate": 3,
-          "fora": 4.3,
-          "atualizado": "2025-05-13T20:39:24.400Z"
-        }
-      },
-      "historico_odds": [
-        {
-          "data": "2025-04-26T10:00:00",
-          "bet365": {
-            "casa": 1.55,
-            "fora": 2.1
-          },
-          "betano": {
-            "casa": 1.5,
-            "fora": 2.05
-          }
-        }
-      ]
-    },
-    {
-      "id": "21a6",
+      "id": "8793",
       "time_casa": "Cruzeiro",
-      "time_fora": "Atletico",
-      "horario": "2025-05-19T20:30",
+      "time_fora": "Fortaleza",
+      "horario": "2025-05-24T20:30",
       "competicao": "brasileirao",
       "esporte": "futebol",
       "odds": {
         "bet365": {
-          "casa": 1,
-          "fora": 1,
-          "empate": 1,
-          "atualizado": "2025-05-19T02:02:27.020Z"
+          "casa": 2,
+          "empate": 2,
+          "fora": 2
         },
         "betano": {
-          "casa": 1,
-          "fora": 1,
-          "empate": 1,
-          "atualizado": "2025-05-19T02:02:27.020Z"
+          "casa": 5,
+          "empate": 4,
+          "fora": 3
         },
         "betfair": {
-          "casa": 1,
-          "fora": 1,
-          "empate": 1,
-          "atualizado": "2025-05-19T02:02:27.020Z"
+          "casa": 2,
+          "empate": 3,
+          "fora": 2
         }
       }
     },
     {
-      "id": "e33f",
-      "time_casa": "Lakers",
-      "time_fora": "Celtics",
-      "horario": "2025-05-20T20:30",
+      "id": "1c45",
+      "time_casa": "River",
+      "time_fora": "Palmeiras",
+      "horario": "2025-05-24T20:30",
+      "competicao": "libertadores",
+      "esporte": "futebol",
+      "odds": {
+        "bet365": {
+          "casa": 5,
+          "empate": 5,
+          "fora": 5
+        },
+        "betano": {
+          "casa": 2,
+          "empate": 4,
+          "fora": 3
+        },
+        "betfair": {
+          "casa": 3,
+          "empate": 2,
+          "fora": 3
+        }
+      }
+    },
+    {
+      "id": "d92c",
+      "time_casa": "Celtics",
+      "time_fora": "Lakers",
+      "horario": "2025-02-19T18:30",
       "competicao": "nba",
       "esporte": "basquete",
       "odds": {
         "bet365": {
           "casa": 2,
-          "fora": 1.74,
-          "atualizado": "2025-05-19T19:08:13.897Z"
+          "fora": 3,
+          "atualizado": "2025-05-22T23:01:49.779Z"
         },
         "betano": {
-          "casa": 3,
-          "fora": 1.5,
-          "atualizado": "2025-05-19T19:08:13.897Z"
-        },
-        "betfair": {
           "casa": 4,
           "fora": 5,
-          "atualizado": "2025-05-19T19:08:13.897Z"
+          "atualizado": "2025-05-22T23:01:49.779Z"
+        },
+        "betfair": {
+          "casa": 2,
+          "fora": 3,
+          "atualizado": "2025-05-22T23:01:49.779Z"
         }
       }
+    },
+    {
+      "id": "0faf",
+      "time_casa": "Corinthians",
+      "time_fora": "Santo André",
+      "horario": "2025-05-24T18:30",
+      "competicao": "nbb",
+      "esporte": "basquete",
+      "odds": {
+        "bet365": {
+          "casa": 2,
+          "fora": 3,
+          "atualizado": "2025-05-22T23:02:46.555Z"
+        },
+        "betano": {
+          "casa": 4,
+          "fora": 3,
+          "atualizado": "2025-05-22T23:02:46.555Z"
+        },
+        "betfair": {
+          "casa": 3,
+          "fora": 2,
+          "atualizado": "2025-05-22T23:02:46.555Z"
+        }
+      }
+    }
+  ],
+  "comentarios": [
+    {
+      "id": "1",
+      "jogoId": "1",
+      "autor": "Ana",
+      "mensagem": "Esse jogo promete! Vamos Botafogo!",
+      "data": "2025-04-27T14:30:00"
+    },
+    {
+      "id": "2",
+      "jogoId": "1",
+      "autor": "Carlos",
+      "mensagem": "Acho que o Vasco vai surpreender...",
+      "data": "2025-04-27T15:00:00"
+    },
+    {
+      "id": "3",
+      "jogoId": "2",
+      "autor": "Marina",
+      "mensagem": "Acho que o Vinicius Junior vai dar 3 chutes a gol hoje .",
+      "data": "2025-04-27T16:45:00"
+    }
+  ],
+  "votos": [
+    {
+      "id": "1",
+      "jogoId": "1",
+      "usuario": "joao123",
+      "escolha": "casa",
+      "data": "2025-04-27T15:45:00"
+    },
+    {
+      "id": "2",
+      "jogoId": "1",
+      "usuario": "maria456",
+      "escolha": "empate",
+      "data": "2025-04-27T16:00:00"
+    },
+    {
+      "id": "3",
+      "jogoId": "2",
+      "usuario": "lucas78",
+      "escolha": "fora",
+      "data": "2025-04-27T16:10:00"
+    }
+  ],
+  "historico_odds": [
+    {
+      "id": 1,
+      "jogoId": "1c45",
+      "casa": "bet365",
+      "casa_valor": 3,
+      "empate_valor": 2,
+      "fora_valor": 3,
+      "data": "2025-05-22T23:00:14.931Z"
+    },
+    {
+      "id": "f157",
+      "jogoId": "1c45",
+      "casa": "bet365",
+      "casa_valor": 5,
+      "empate_valor": 5,
+      "fora_valor": 5,
+      "data": "2025-06-04T13:41:25.126Z"
+    },
+    {
+      "id": "f3fe",
+      "jogoId": "1c45",
+      "casa": "betano",
+      "casa_valor": 2,
+      "empate_valor": 4,
+      "fora_valor": 3,
+      "data": "2025-06-04T13:41:25.126Z"
+    },
+    {
+      "id": "c494",
+      "jogoId": "1c45",
+      "casa": "betfair",
+      "casa_valor": 3,
+      "empate_valor": 2,
+      "fora_valor": 3,
+      "data": "2025-06-04T13:41:25.126Z"
     }
   ]
 }

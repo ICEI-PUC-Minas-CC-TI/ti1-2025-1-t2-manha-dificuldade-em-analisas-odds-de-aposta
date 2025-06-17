@@ -31,6 +31,8 @@
     table { width: 100%; border-collapse: collapse; background: var(--table-bg); color: var(--text-dark); }
     th, td { border: 1px solid #aaa; padding: 8px; text-align: left; }
     th { background: var(--sidebar-bg); }
+    .star { cursor: pointer; color: #ccc; font-size: 20px; user-select: none; }
+    .star.favorite { color: gold; }
     @media (max-width: 768px) {
       .main { flex-direction: column; }
       .sidebar { width: 100%; height: auto; }
@@ -52,6 +54,7 @@
       <table>
         <thead>
           <tr>
+            <th>Favorito</th>
             <th>Horário</th>
             <th>Partida</th>
             <th>Casa</th>
@@ -67,6 +70,7 @@
     const API_URL = 'https://33765672-f51d-46f5-b276-32beaed4448a-00-3qd9ymtpuc1xv.worf.replit.dev';
     let esportes = [], competicoes = [], jogos = [];
     let currentSport = 'futebol', currentComp = null;
+    let favorites = JSON.parse(localStorage.getItem('favorites')) || {};
 
     document.addEventListener('DOMContentLoaded', init);
     async function init() {
@@ -113,52 +117,66 @@
       });
     }
 
-    function renderGames() {
-  const title = document.getElementById('content-title');
-  title.textContent = currentComp ? competicoes.find(c => c.id === currentComp).nome : 'Ligas Populares';
-  const tbody = document.getElementById('games-body');
-  tbody.innerHTML = '';
-
-  let list = jogos.filter(j => j.esporte === currentSport);
-  if (currentComp) list = list.filter(j => j.competicao === currentComp);
-
-  list.forEach(j => {
-    const tr = document.createElement('tr');
-    const time = new Date(j.horario).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
-
-    const getBest = (col) => {
-      let melhorCasa = null;
-      let maiorOdd = 0;
-
-      for (const casa in j.odds) {
-        const odd = j.odds[casa][col];
-        if (odd && odd > maiorOdd) {
-          maiorOdd = odd;
-          melhorCasa = casa;
-        }
+    function toggleFavorite(gameId) {
+      if (favorites[gameId]) {
+        delete favorites[gameId];
+      } else {
+        favorites[gameId] = true;
       }
+      localStorage.setItem('favorites', JSON.stringify(favorites));
+      renderGames();
+    }
 
-      return {
-        odd: maiorOdd.toFixed(2),
-        logo: melhorCasa ? `<img src="logos/${melhorCasa}.png" alt="${melhorCasa}" style="height: 20px; margin-top: 4px;" />` : ''
-      };
-    };
+    function renderGames() {
+      const title = document.getElementById('content-title');
+      title.textContent = currentComp ? competicoes.find(c => c.id === currentComp).nome : 'Ligas Populares';
+      const tbody = document.getElementById('games-body');
+      tbody.innerHTML = '';
 
-    const casa = getBest('casa');
-    const empate = getBest('empate');
-    const fora = getBest('fora');
+      let list = jogos.filter(j => j.esporte === currentSport);
+      if (currentComp) list = list.filter(j => j.competicao === currentComp);
 
-    tr.innerHTML = `
-      <td>${time}</td>
-      <td>${j.time_casa} vs ${j.time_fora}</td>
-      <td>${casa.odd}<br>${casa.logo}</td>
-      <td>${empate.odd}<br>${empate.logo}</td>
-      <td>${fora.odd}<br>${fora.logo}</td>
-    `;
-    tbody.appendChild(tr);
-  });
-}
+      list.forEach(j => {
+        const tr = document.createElement('tr');
+        const time = new Date(j.horario).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
 
+        const getBest = (col) => {
+          let melhorCasa = null;
+          let maiorOdd = 0;
+
+          for (const casa in j.odds) {
+            const odd = j.odds[casa][col];
+            if (odd && odd > maiorOdd) {
+              maiorOdd = odd;
+              melhorCasa = casa;
+            }
+          }
+
+          return {
+            odd: maiorOdd.toFixed(2),
+            logo: melhorCasa ? `<img src="logos/${melhorCasa}.png" alt="${melhorCasa}" style="height: 20px; margin-top: 4px;" />` : ''
+          };
+        };
+
+        const casa = getBest('casa');
+        const empate = getBest('empate');
+        const fora = getBest('fora');
+
+        const starClass = favorites[j.id] ? 'star favorite' : 'star';
+        tr.innerHTML = `
+          <td><span class="${starClass}" onclick="toggleFavorite('${j.id}')">★</span></td>
+          <td>${time}</td>
+          <td>${j.time_casa} vs ${j.time_fora}</td>
+          <td>${casa.odd}<br>${casa.logo}</td>
+          <td>${empate.odd}<br>${empate.logo}</td>
+          <td>${fora.odd}<br>${fora.logo}</td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    // Torna a função acessível globalmente para o onclick
+    window.toggleFavorite = toggleFavorite;
   </script>
 </body>
 </html>

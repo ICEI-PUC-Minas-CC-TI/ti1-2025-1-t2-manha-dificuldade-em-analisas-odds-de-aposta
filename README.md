@@ -7,9 +7,7 @@ O objetivo do projeto é facilitar a comparaçao de odds de múltiplas casas de 
 
 * Arthur de Pinho de Almeida
 * Bernardo Soares Campolina Cotta
-* Cauã Dumont Abreu
 * Gabriel de Oliveira Barbosa
-* Kauã Ferandes Reis
 
 ## Professores responsáveis
 

@@ -8,8 +8,6 @@ Informações básicas do projeto.
 
   * Arthur De Pinho De Almeida https://github.com/imartzz
   * Bernado Soares https://github.com/bernardosoares22
-  * Cauã Dumont  https://github.com/Cauadumont
-  * Kauã Ferandes https://github.com/Kaua0606
   * Gabriel Barbosa https://github.com/gabriel180501
 A documentação do projeto é estruturada da seguinte forma:
 

@@ -289,7 +289,7 @@ Ler os jogos do json e monta a tabela dele no site
 ![image](https://github.com/user-attachments/assets/089b9a18-b11e-4856-a681-10372cd127be)
 
 ##### Funcionalidade 3 - Favoritar Jogos
-Botão que possibilita favoritar, e aba que mostra os jogos favoritos
+Botão que possibilita favoritar e aba que mostra os jogos favoritos
 
 * **Estrutura de dados:**
   ```json
@@ -338,7 +338,7 @@ Botão que possibilita favoritar, e aba que mostra os jogos favoritos
 
 
 ##### Funcionalidade 4 - Historico de odds
-Funcionalidade da página de detalhes que mostra o historico de odds daquele jogo especifico
+Funcionalidade da página de detalhes que mostra o histórico de odds daquele jogo especifico
 
 * **Estrutura de dados:**
 ```json
@@ -357,7 +357,7 @@ Funcionalidade da página de detalhes que mostra o historico de odds daquele jog
 * Logar
 * Clicar em algum jogo
 * Descer a pagina
-* Visualizar o historico de odds
+* Visualizar o histórico de odds
    **Tela da funcionalidade**:
   ![image](https://github.com/user-attachments/assets/5fa16022-595e-4dec-a0a6-fe12152adf51)
 

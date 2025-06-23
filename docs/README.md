@@ -140,7 +140,6 @@ Tela caso o usuario escolha uma liga de basquete o mesmo aconteceria para uma li
 ![image](https://github.com/user-attachments/assets/3c83ca17-2d3f-42d5-a3fd-00658aef6a21)
 
 
-![Exemplo de fluxo de telas](images/exemplo-userflow.png)
 
 
 
@@ -148,11 +147,11 @@ Tela caso o usuario escolha uma liga de basquete o mesmo aconteceria para uma li
 
 # Metodologia
 
-Detalhes sobre a organização do grupo e o ferramental empregado.
+Nossa organizaçao foi baseada em discord e whats, usamos o miro nas primeiras atividades e na sprint 2 e 3 github e o github pages pra subir o site no ar, como estamos em somente 3 no grupo fica bem facil dividir as tarefas e consequentemente planejar o projeto.
 
 ## Ferramentas
 
-Relação de ferramentas empregadas pelo grupo durante o projeto.
+Discord,Whats,Github,githubPages,Miro.
 
 
  Processo de Design Thinking  Miro     |https://miro.com/welcome/TDdTeGpCWW9DK0dZV0NUU3NCMDFVMnk0c1A1L1FPOW4xRkFtc1NFTURLc08rcnNDNWhvR0ZaUmlGTU1jQmxrWnY4S1RQT044YUhkV2VRS2ZtK3JFZVloRXRTRGVNZkxIOHZhaUlOcEUzTDhqdXhKTno4V3V3blNmU0RkcUl4THN3VHhHVHd5UWtSM1BidUtUYmxycDRnPT0hdjE=?share_link_id=173542825303        |
@@ -173,23 +172,121 @@ Marcamos reunião alguns dias da semana para concluirmos as tarefas e nela separ
 
 # Solução Implementada
 
-Esta seção apresenta todos os detalhes da solução criada no projeto.
+Nossa soluçao foi criar um site simples e prático que analisa as odds e mostra qual casa tem a melhor odd no momento além de mostrar historico de odds, votaçao popular e comentarios.
+
+![image](https://github.com/user-attachments/assets/36f1e109-b03d-4b45-969e-6753f970d4e6)
+
+![image](https://github.com/user-attachments/assets/ee2a97cb-3b6c-4ad8-aa8a-4f052af3e1ad)
+
+![image](https://github.com/user-attachments/assets/09494686-9e6c-413d-b6b8-04c85f62e579)
+
 
 ## Vídeo do Projeto
 
-O vídeo a seguir traz uma apresentação do problema que a equipe está tratando e a proposta de solução. ⚠️ EXEMPLO ⚠️
 
-[![Vídeo do projeto](images/video.png)](https://www.youtube.com/embed/70gGoFyGeqQ)
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> O video de apresentação é voltado para que o público externo possa conhecer a solução. O formato é livre, sendo importante que seja apresentado o problema e a solução numa linguagem descomplicada e direta.
->
-> Inclua um link para o vídeo do projeto.
+
+https://github.com/user-attachments/assets/c0ee9db5-c363-4b75-b523-9f4382c7e617
+
+
+
+
 
 ## Funcionalidades
 
 Esta seção apresenta as funcionalidades da solução.Info
+
+Funcionalidade 1 - Pagina de Admin
+
+Permite Cadastro de jogos e atualizaçao de odds de jogos ja cadastrados.
+* **Estrutura de dados:**{
+```json
+  "id": "781b",
+      "jogoId": "8793",
+      "casa": "bet365",
+      "casa_valor": 1.52,
+      "empate_valor": 3.75,
+      "fora_valor": 5,
+      "data": "2025-06-10T23:00:40.738Z"
+    },
+
+  {
+      "id": "d92c",
+      "time_casa": "Celtics",
+      "time_fora": "Lakers",
+      "horario": "2025-02-19T18:30",
+      "competicao": "nba",
+      "esporte": "basquete",
+      "odds": {
+        "bet365": {
+          "casa": 3,
+          "fora": 2
+        },
+        "betano": {
+          "casa": 3,
+          "fora": 3
+        },
+        "betfair": {
+          "casa": 2,
+          "fora": 2
+        }
+      }
+    },
+```
+
+  * **Instruções de acesso:**
+  * Efetue Login como admin
+  * Acesse o menu de admin
+  * Faça as alteraçoes
+   **Tela da funcionalidade**:
+  * ![image](https://github.com/user-attachments/assets/88cbbc3b-95c7-4df4-996d-893e1566024c)
+  * ![image](https://github.com/user-attachments/assets/b0100e0e-bd87-4b1f-b027-b1aa44fee766)
+
+##### Funcionalidade 2 - Tabela de jogos
+Ler os jogos do json e monta a tabela dele no site
+
+* **Estrutura de dados:**{
+```json
+  "esportes": [
+    {
+      "id": "futebol",
+      "nome": "Futebol",
+      "colunas": [
+        "casa",
+        "empate",
+        "fora"
+      ]
+    },
+
+  {
+      "id": "d92c",
+      "time_casa": "Celtics",
+      "time_fora": "Lakers",
+      "horario": "2025-02-19T18:30",
+      "competicao": "nba",
+      "esporte": "basquete",
+      "odds": {
+        "bet365": {
+          "casa": 3,
+          "fora": 2
+        },
+        "betano": {
+          "casa": 3,
+          "fora": 3
+        },
+        "betfair": {
+          "casa": 2,
+          "fora": 2
+        }
+      }
+    },
+```
+ * **Instruções de acesso:**
+ * Logar no site
+ * Ver a tabela de jogos
+
+**Tela da funcionalidade**:
+![image](https://github.com/user-attachments/assets/089b9a18-b11e-4856-a681-10372cd127be)
 
 ##### Funcionalidade 1 - Cadastro de Contatos ⚠️ EXEMPLO ⚠️
 
@@ -213,82 +310,119 @@ Permite a inclusão, leitura, alteração e exclusão de contatos para o sistema
 ## Estruturas de Dados
 
 Descrição das estruturas de dados utilizadas na solução com exemplos no formato JSON.Info
+#### Estrutura de dados - Votaçao
+```json
+{
+      {
+      "id": "3",
+      "jogoId": "2",
+      "usuario": "lucas78",
+      "resultado": "fora",
+      "data": "2025-04-27T16:10:00.000Z"
+    },
 
-##### Estrutura de Dados - Contatos   ⚠️ EXEMPLO ⚠️
+```
 
-Contatos da aplicação
+
+##### Estrutura de dados - Comentario
+
+```json
+{
+      "id": "2bc0",
+      "jogoId": "1",
+      "mensagem": "Acho que o Cruzeiro Vence",
+      "autor": "admin@gmail.com",
+      "data": "2025-06-22T23:15:53.825Z"
+    },
+
+```
+
+
+
+##### Estrutura de Dados - Esportes
+
+```json
+"id": "futebol",
+      "nome": "Futebol",
+      "colunas": [
+        "casa",
+        "empate",
+        "fora"
+      ]
+    }
+```
+
+
+
+
+
+##### Estrutura de Dados - Cadastro de jogo
+
+Cadastro de jogo
 
 ```json
   {
-    "id": 1,
-    "nome": "Leanne Graham",
-    "cidade": "Belo Horizonte",
-    "categoria": "amigos",
-    "email": "Sincere@april.biz",
-    "telefone": "1-770-736-8031",
-    "website": "hildegard.org"
-  }
+      "id": "1c45",
+      "time_casa": "River",
+      "time_fora": "Palmeiras",
+      "horario": "2025-05-24T20:30",
+      "competicao": "libertadores",
+      "esporte": "futebol",
+      "odds": {
+        "bet365": {
+          "casa": 4,
+          "empate": 3,
+          "fora": 3.5
+        },
+        "betano": {
+          "casa": 2,
+          "empate": 3.6,
+          "fora": 4.6
+        },
+        "betfair": {
+          "casa": 3,
+          "empate": 2,
+          "fora": 2.6
+        }
+      }
+    },
   
 ```
 
-##### Estrutura de Dados - Usuários  ⚠️ EXEMPLO ⚠️
+##### Estrutura de Dados - Usuários  
 
 Registro dos usuários do sistema utilizados para login e para o perfil do sistema
 
 ```json
-  {
-    id: "eed55b91-45be-4f2c-81bc-7686135503f9",
-    email: "admin@abc.com",
-    id: "eed55b91-45be-4f2c-81bc-7686135503f9",
-    login: "admin",
-    nome: "Administrador do Sistema",
-    senha: "123"
-  }
+{
+      "id": "bc05",
+      "nome": "admin",
+      "email": "admin@gmail.com",
+      "senha": "123",
+      "admin": true
+    },
 ```
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Apresente as estruturas de dados utilizadas na solução tanto para dados utilizados na essência da aplicação quanto outras estruturas que foram criadas para algum tipo de configuração
->
-> Nomeie a estrutura, coloque uma descrição sucinta e apresente um exemplo em formato JSON.
->
-> **Orientações:**
->
-> * [JSON Introduction](https://www.w3schools.com/js/js_json_intro.asp)
-> * [Trabalhando com JSON - Aprendendo desenvolvimento web | MDN](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Objects/JSON)
+
 
 ## Módulos e APIs
 
-Esta seção apresenta os módulos e APIs utilizados na solução
+Usamos replit como servidor do db.json
 
 **Images**:
 
-* Unsplash - [https://unsplash.com/](https://unsplash.com/) ⚠️ EXEMPLO ⚠️
+
 
 **Fonts:**
 
-* Icons Font Face - [https://fontawesome.com/](https://fontawesome.com/) ⚠️ EXEMPLO ⚠️
+
 
 **Scripts:**
 
-* jQuery - [http://www.jquery.com/](http://www.jquery.com/) ⚠️ EXEMPLO ⚠️
-* Bootstrap 4 - [http://getbootstrap.com/](http://getbootstrap.com/) ⚠️ EXEMPLO ⚠️
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Apresente os módulos e APIs utilizados no desenvolvimento da solução. Inclua itens como: (1) Frameworks, bibliotecas, módulos, etc. utilizados no desenvolvimento da solução; (2) APIs utilizadas para acesso a dados, serviços, etc.
+
+
 
 # Referências
 
 As referências utilizadas no trabalho foram:
-
-* SOBRENOME, Nome do autor. Título da obra. 8. ed. Cidade: Editora, 2000. 287 p ⚠️ EXEMPLO ⚠️
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
->
-> **Orientações**:
->
-> - [Formato ABNT](https://www.normastecnicas.com/abnt/trabalhos-academicos/referencias/)
-> - [Referências Bibliográficas da ABNT](https://comunidade.rockcontent.com/referencia-bibliografica-abnt/)

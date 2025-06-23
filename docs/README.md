@@ -245,7 +245,7 @@ Permite Cadastro de jogos e atualizaçao de odds de jogos ja cadastrados.
 ##### Funcionalidade 2 - Tabela de jogos
 Ler os jogos do json e monta a tabela dele no site
 
-* **Estrutura de dados:**{
+* **Estrutura de dados:**
 ```json
   "esportes": [
     {
@@ -288,24 +288,133 @@ Ler os jogos do json e monta a tabela dele no site
 **Tela da funcionalidade**:
 ![image](https://github.com/user-attachments/assets/089b9a18-b11e-4856-a681-10372cd127be)
 
-##### Funcionalidade 1 - Cadastro de Contatos ⚠️ EXEMPLO ⚠️
+##### Funcionalidade 3 - Favoritar Jogos
+Botão que possibilita favoritar, e aba que mostra os jogos favoritos
 
-Permite a inclusão, leitura, alteração e exclusão de contatos para o sistema
+* **Estrutura de dados:**
+  ```json
+  "esportes": [
+    {
+      "id": "futebol",
+      "nome": "Futebol",
+      "colunas": [
+        "casa",
+        "empate",
+        "fora"
+      ]
+    },
 
-* **Estrutura de dados:** [Contatos](#ti_ed_contatos)
+  {
+      "id": "d92c",
+      "time_casa": "Celtics",
+      "time_fora": "Lakers",
+      "horario": "2025-02-19T18:30",
+      "competicao": "nba",
+      "esporte": "basquete",
+      "odds": {
+        "bet365": {
+          "casa": 3,
+          "fora": 2
+        },
+        "betano": {
+          "casa": 3,
+          "fora": 3
+        },
+        "betfair": {
+          "casa": 2,
+          "fora": 2
+        }
+      }
+    },
+``
 * **Instruções de acesso:**
-  * Abra o site e efetue o login
-  * Acesse o menu principal e escolha a opção Cadastros
-  * Em seguida, escolha a opção Contatos
-* **Tela da funcionalidade**:
+* Logar no site
+* Favoritar jogo
+* Abrir aba de favoritos
 
-![Tela de Funcionalidade](images/exemplo-funcionalidade.png)
+ **Tela da funcionalidade**:
+ ![image](https://github.com/user-attachments/assets/b9bc44b3-1746-488d-a28e-3d80f0092c34)
+ ![image](https://github.com/user-attachments/assets/21f0b79e-9c8c-47c9-8cc7-401d434c626d)
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Apresente cada uma das funcionalidades que a aplicação fornece tanto para os usuários quanto aos administradores da solução.
->
-> Inclua, para cada funcionalidade, itens como: (1) titulos e descrição da funcionalidade; (2) Estrutura de dados associada; (3) o detalhe sobre as instruções de acesso e uso.
+
+##### Funcionalidade 4 - Historico de odds
+Funcionalidade da página de detalhes que mostra o historico de odds daquele jogo especifico
+
+* **Estrutura de dados:**
+```json
+   "historico_odds": [
+    {
+      "id": "1",
+      "jogoId": "1c45",
+      "casa": "bet365",
+      "casa_valor": 3,
+      "empate_valor": 2,
+      "fora_valor": 3,
+      "data": "2025-05-22T23:00:14.931Z"
+    },
+```
+* **Instruções de acesso:**
+* Logar
+* Clicar em algum jogo
+* Descer a pagina
+* Visualizar o historico de odds
+   **Tela da funcionalidade**:
+  ![image](https://github.com/user-attachments/assets/5fa16022-595e-4dec-a0a6-fe12152adf51)
+
+##### Funcionalidade 5 - Página de detalhes e comentarios/votaçao
+Página que pega informaçoes especificas do jogo clicado
+
+* **Estrutura de dados:**
+```json
+  {
+      "id": "1603",
+      "jogoId": "1c45",
+      "mensagem": "Acho que o Palmeiras vencera",
+      "autor": "admin@gmail.com",
+      "data": "2025-06-22T23:56:19.240Z"
+    }
+{
+      "id": "0ca3",
+      "jogoId": "1",
+      "usuario": "anonimo1",
+      "resultado": "Cruzeiro",
+      "data": "2025-04-27T16:20:00.000Z"
+    },
+{
+      "id": "1",
+      "time_casa": "Cruzeiro",
+      "time_fora": "Fortaleza",
+      "horario": "2025-05-24T20:30",
+      "competicao": "brasileirao",
+      "esporte": "futebol",
+      "odds": {
+        "bet365": {
+          "casa": 1.5,
+          "empate": 3,
+          "fora": 3
+        },
+        "betano": {
+          "casa": 2,
+          "empate": 3,
+          "fora": 5
+        },
+        "betfair": {
+          "casa": 2,
+          "empate": 3.3,
+          "fora": 6
+        }
+      }
+    },
+```
+* **Instruções de acesso:**
+* Logar no site
+* Clicar em algum jogo da tabela
+* Visualizar a página
+
+    **Tela da funcionalidade**:
+  ![image](https://github.com/user-attachments/assets/f867f090-7471-49d5-a2ec-b9404ef861da)
+![image](https://github.com/user-attachments/assets/08dca8c8-bab0-4e2c-886a-04b64649eb2d)
+![image](https://github.com/user-attachments/assets/abd3a806-0c2a-4dcf-aa0c-913de568ca06)
 
 ## Estruturas de Dados
 
@@ -411,6 +520,7 @@ Usamos replit como servidor do db.json
 
 **Images**:
 
+![image](https://github.com/user-attachments/assets/ffab01cd-51ff-4a7b-9c31-44daf8a5908b)
 
 
 **Fonts:**
